@@ -1,3 +1,30 @@
 Spring boot actuator:
 
+dependency:
+Spring-boot-starter-actuator
+
+localhost:8081/actuator
+health,metrics
+
+
+
+@RestController
+
+contains: @Controller and @ResponseBody(used for sending response as 
+ResponseBody which is containing "headers" and "response" status)
+
+
+@PathVariable:
+
+https://www.baeldung.com/spring-pathvariable
+
+
+
+@PathVariable & @RequestParams when to use?
+
+ans: If the data is mandatory go with @PathVariable
+    If not use @RequestParams
+
+
+
 
