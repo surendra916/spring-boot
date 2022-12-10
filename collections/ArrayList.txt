@@ -1,0 +1,60 @@
+Collections 
+Defines several classes and interfaces to represent group of individual objects as a single entity.
+It defines most common methods like add, remove, contains, isEmpty which are applicable for any collection object.
+
+pros:
+-----------------
+We can have heterogeneous(diff) type elements.
+For every Collection Readymade methods are available 
+    -> Because of Underlying Datastructures
+    -> Every Collection(ArrayList/hashset/tree....) is implemented by List,Set,...Interfaces
+Can grow memory dynamically.
+Cons:
+------
+can hold only Object types but not primitives.
+Performance
+
+Every Collection has default size limit.
+If we need to add new element to ArrayList & whenever default limit is crossed
+A new ArrayList gets created with all elements getting copied to this list and the extra memory.
+
+
+Collection vs Collections:
+--------------------------
+
+Collections is a Utility class which provides sorting, searching, etc..,
+
+
+List :
+-------
+duplicates allowed
+Has Insertion order
+
+    Collection(I) -> List(I) -> 
+
+
+Set:
+-----
+duplicates not allowed
+Has no Insertion order
+    Collection(I) -> Set(I) -> HashSet(C) -> LinkedHashSet(C)
+    Collection(I) -> Set(I) -> SortedSet(I) -> NavigableSet(I)(Defines multiple methods for navigation purposes) -> TreeSet(C)
+
+
+Queue:
+-------
+    Collection(I) -> Queue(I) -> PriorityQueue
+
+
+Map:
+-----
+
+Map is not child interface of Collection interface
+Does not allow duplicate KEYS but allows duplicate values.
+
+
+Map(I) -> SortedMap(I) -> NavigableMap(I) -> TreeMap(C)
+
+    
+
+        
